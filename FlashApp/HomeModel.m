@@ -20,7 +20,11 @@
 - (void)downloadItems
 {
     // Download the json file
+<<<<<<< HEAD
+    NSURL *jsonFileUrl = [NSURL URLWithString:@"http://104.245.36.70/FlashApp/service.php"];
+=======
     NSURL *jsonFileUrl = [NSURL URLWithString:@"http://reyesomar.me/FlashApp/service.php"];
+>>>>>>> 12fed1c745b84004b4856b5c3a5994c7ce018598
     
     // Create the request
     NSURLRequest *urlRequest = [[NSURLRequest alloc] initWithURL:jsonFileUrl];
