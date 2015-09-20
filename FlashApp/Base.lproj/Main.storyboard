@@ -37,10 +37,39 @@
                     <navigationItem key="navigationItem" title="Locations" id="tZZ-pk-DO1"/>
                     <connections>
                         <outlet property="listTableView" destination="NkB-CJ-VVM" id="2D4-Rl-A9S"/>
+                        <segue destination="MYG-a3-lL4" kind="show" identifier="detailSegue" id="m33-fS-i0o"/>
                     </connections>
                 </viewController>
             </objects>
             <point key="canvasLocation" x="785" y="288"/>
+        </scene>
+        <!--Detail View Controller-->
+        <scene sceneID="b2j-xX-gCr">
+            <objects>
+                <viewController id="MYG-a3-lL4" customClass="DetailViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="5OL-du-sIg"/>
+                        <viewControllerLayoutGuide type="bottom" id="9K4-Hd-BXx"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="gTm-Jh-0hn">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="oc6-lB-wNf">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                            </mapView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <toolbarItems/>
+                    <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
+                    <connections>
+                        <outlet property="mapView" destination="oc6-lB-wNf" id="QJJ-ta-EUp"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="gXJ-7L-vRw" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1471" y="287"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="hLL-yu-4jJ">
