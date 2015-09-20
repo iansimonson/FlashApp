@@ -134,11 +134,11 @@ module.exports = {
   },
 
   passThroughUserAboutMePOST: function(req, res){
-    console.log('POST /user/aboutme');
+    console.log('POST /user/aboutMe');
 
     var options = {
       host: configDB.host,
-      path: configDB.basePath + '/user/aboutme',
+      path: configDB.basePath + '/user/aboutMe',
       method: 'POST'
     };
 
@@ -146,11 +146,11 @@ module.exports = {
   },
 
   passThroughUserAboutMeGET: function(req, res){
-    console.log('GET /user/aboutme');
+    console.log('GET /user/aboutMe');
 
     var options = {
       host: configDB.host,
-      path: configDB.basePath + '/user/aboutme',
+      path: configDB.basePath + '/user/aboutMe',
       method: 'GET'
     };
 
@@ -162,7 +162,7 @@ module.exports = {
 
     var options = {
       host: configDB.host,
-      path: configDB.basePath + '/user/aboutme',
+      path: configDB.basePath + '/user/aboutMe',
       method: 'POST'
     };
 
