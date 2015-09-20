@@ -8,11 +8,13 @@
 
 #import "ViewController.h"
 #import "Location.h"
+#import "DetailViewController.h"
 
 @interface ViewController ()
 {
 HomeModel *_homeModel;
 NSArray *_feedItems;
+Location *_selectedLocation;
 }
 
 @end
@@ -60,6 +62,7 @@ NSArray *_feedItems;
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
 {
     // Return the number of feed items (initially 0)
+    NSLog(@"count %d",_feedItems.count);
     return _feedItems.count;
 }
 
@@ -74,8 +77,31 @@ NSArray *_feedItems;
     
     // Get references to labels of cell
     myCell.textLabel.text = item.address;
-    
+  //  NSLog(@"This is the address %s", item.address);
+   //     myCell.textLabel.text = @"1192 Market St San Francisco, CA 94102";
+  
     return myCell;
+}
+
+- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    // Set selected location to var
+    _selectedLocation = _feedItems[indexPath.row];
+    
+    // Manually call segue to detail view controller
+    [self performSegueWithIdentifier:@"detailSegue" sender:self];
+}
+
+#pragma mark Segue
+
+- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
+{
+    // Get reference to the destination view controller
+    DetailViewController *detailVC = segue.destinationViewController;
+    
+    // Set the property to the selected location so when the view for
+    // detail view controller loads, it can access that property to get the feeditem obj
+    detailVC.selectedLocation = _selectedLocation;
 }
 
 @end

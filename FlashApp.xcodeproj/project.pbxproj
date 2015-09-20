@@ -17,6 +17,8 @@
 		FA9FC4641BAE120100D9EDD9 /* FlashAppUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = FA9FC4631BAE120100D9EDD9 /* FlashAppUITests.m */; };
 		FA9FC4731BAE14C700D9EDD9 /* HomeModel.m in Sources */ = {isa = PBXBuildFile; fileRef = FA9FC4721BAE14C700D9EDD9 /* HomeModel.m */; settings = {ASSET_TAGS = (); }; };
 		FA9FC4761BAE14D800D9EDD9 /* Location.m in Sources */ = {isa = PBXBuildFile; fileRef = FA9FC4751BAE14D800D9EDD9 /* Location.m */; settings = {ASSET_TAGS = (); }; };
+		FA9FC4791BAE1CD900D9EDD9 /* DetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FA9FC4781BAE1CD900D9EDD9 /* DetailViewController.m */; settings = {ASSET_TAGS = (); }; };
+		FA9FC47B1BAE1F4000D9EDD9 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FA9FC47A1BAE1F4000D9EDD9 /* MapKit.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -57,6 +59,9 @@
 		FA9FC4721BAE14C700D9EDD9 /* HomeModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HomeModel.m; sourceTree = "<group>"; };
 		FA9FC4741BAE14D800D9EDD9 /* Location.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Location.h; sourceTree = "<group>"; };
 		FA9FC4751BAE14D800D9EDD9 /* Location.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Location.m; sourceTree = "<group>"; };
+		FA9FC4771BAE1CD900D9EDD9 /* DetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DetailViewController.h; sourceTree = "<group>"; };
+		FA9FC4781BAE1CD900D9EDD9 /* DetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DetailViewController.m; sourceTree = "<group>"; };
+		FA9FC47A1BAE1F4000D9EDD9 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -64,6 +69,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FA9FC47B1BAE1F4000D9EDD9 /* MapKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -87,6 +93,7 @@
 		FA9FC4321BAE120000D9EDD9 = {
 			isa = PBXGroup;
 			children = (
+				FA9FC47A1BAE1F4000D9EDD9 /* MapKit.framework */,
 				FA9FC43D1BAE120000D9EDD9 /* FlashApp */,
 				FA9FC4571BAE120100D9EDD9 /* FlashAppTests */,
 				FA9FC4621BAE120100D9EDD9 /* FlashAppUITests */,
@@ -120,6 +127,8 @@
 				FA9FC4721BAE14C700D9EDD9 /* HomeModel.m */,
 				FA9FC4741BAE14D800D9EDD9 /* Location.h */,
 				FA9FC4751BAE14D800D9EDD9 /* Location.m */,
+				FA9FC4771BAE1CD900D9EDD9 /* DetailViewController.h */,
+				FA9FC4781BAE1CD900D9EDD9 /* DetailViewController.m */,
 			);
 			path = FlashApp;
 			sourceTree = "<group>";
@@ -288,6 +297,7 @@
 				FA9FC4461BAE120000D9EDD9 /* ViewController.m in Sources */,
 				FA9FC4431BAE120000D9EDD9 /* AppDelegate.m in Sources */,
 				FA9FC4401BAE120000D9EDD9 /* main.m in Sources */,
+				FA9FC4791BAE1CD900D9EDD9 /* DetailViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
