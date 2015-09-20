@@ -1,0 +1,4 @@
+/MiddleWare/config/*
+/MiddleWare/node_modules/*
+.DS_Store
+*.log
